@@ -32,9 +32,18 @@ header {
   border-radius: 1rem;
 }
 
+img {
+  height: 30rem;
+  padding-top: 0.75rem;
+}
+
 /* right display */
 .right {
   padding: 2vw 5vw;
+}
+
+.synopsis {
+  padding-top: 0.75rem;
 }
 
 #review-display {
