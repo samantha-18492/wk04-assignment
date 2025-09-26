@@ -2,7 +2,9 @@ const reviewDisplay = document.getElementById("review-display");
 
 //get details from database
 async function fetchReviews() {
-  const response = await fetch(`http://localhost:8080/book-reviews`);
+  const response = await fetch(
+    `https://wk04-assignment-server.onrender.com//book-reviews`
+  );
   const reviews = await response.json();
   createReviews(reviews);
 }
@@ -41,11 +43,14 @@ form.addEventListener("submit", async (event) => {
   const userReview = Object.fromEntries(data);
 
   //post to database
-  const response = await fetch("http://localhost:8080/book-reviews", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(userReview),
-  });
+  const response = await fetch(
+    "https://wk04-assignment-server.onrender.com//book-reviews",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userReview),
+    }
+  );
 });
