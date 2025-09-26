@@ -12,6 +12,15 @@ body {
 header {
   background-color: pink;
   padding: 2vw 5vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+}
+
+main {
+  padding-top: 60px;
 }
 
 .left {
@@ -43,14 +52,18 @@ img {
 }
 
 .synopsis {
-  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.form {
+  border: solid black 2px;
+  padding: 0.75rem;
+  border-radius: 1rem;
 }
 
 #review-display {
-  display: flex;
-  flex-wrap: wrap;
   border: solid black 2px;
-  border-radius: 10px;
+  border-radius: 1rem;
 
   /* align-items: center;
   justify-content: center;
@@ -61,7 +74,7 @@ img {
   margin: 15px;
   border: black 2px solid;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0.75rem;
   background-color: yellow;
 }
 
