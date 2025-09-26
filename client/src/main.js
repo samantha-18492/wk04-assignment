@@ -3,7 +3,7 @@ const reviewDisplay = document.getElementById("review-display");
 //get details from database
 async function fetchReviews() {
   const response = await fetch(
-    `https://wk04-assignment-server.onrender.com//book-reviews`
+    `https://wk04-assignment-server.onrender.com/book-reviews`
   );
   const reviews = await response.json();
   createReviews(reviews);
