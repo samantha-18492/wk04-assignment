@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+header {
+  background-color: pink;
+  padding: 2vw 5vw;
+}
+
+.left {
+  padding: 2vw 5vw;
+}
+
+.genres {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.75rem;
+}
+
+.genre {
+  background-color: black;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+
+/* right display */
+.right {
+  padding: 2vw 5vw;
+}
+
+#review-display {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid black 2px;
+  border-radius: 10px;
+
+  /* align-items: center;
+  justify-content: center;
+  width: 100vw; */
+}
+
+.review-container {
+  margin: 15px;
+  border: black 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.username {
+  font-style: italic;
+}
+
+.comment {
+  color: red;
+}
+
+.rating {
+  font-weight: bold;
+}

@@ -13,8 +13,62 @@
       <nav></nav>
     </header>
     <main>
-      <section class="left"></section>
-      <section class="right"></section>
+      <div class="left">
+        <div class="featured-book">
+          <h2>The Midnight Library</h2>
+          <h3>Matt Haig</h3>
+          <div class="genres">
+            <p class="genre">Fiction</p>
+            <p class="genre">Fantasy</p>
+          </div>
+          <img />
+        </div>
+        <div class="more-from-the-author"></div>
+      </div>
+      <div class="right">
+        <div class="synopsis">
+          <h4>About the book:</h4>
+          <p>
+            The Midnight Library by Matt Haig is a thought-provoking novel that
+            explores the life of Nora Seed, a woman filled with regret and
+            unhappiness. After a series of personal failures, Nora finds herself
+            in a magical library between life and death. Each book in the
+            library represents a different life Nora could have lived if she had
+            made different choices. Through exploring these alternate lives,
+            Nora discovers the profound truth about regret, possibility, and
+            what it means to live a meaningful life.
+          </p>
+        </div>
+        <div class="review-section">
+          <form id="form">
+            <label>Name</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="e.g. John"
+              required
+            />
+            <label>Comment</label>
+            <input
+              type="text"
+              name="comment"
+              placeholder="Please add your review"
+              required
+            />
+            <label>Rating</label>
+            <input
+              type="number"
+              name="rating"
+              min="1"
+              max="5"
+              placeholder="5 being the best"
+              required
+            />
+            <button type="submit">Submit</button>
+          </form>
+          <div id="review-display"></div>
+        </div>
+      </div>
     </main>
     <footer>
       <p>© Samantha Parkes</p>
