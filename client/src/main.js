@@ -53,4 +53,5 @@ form.addEventListener("submit", async (event) => {
       body: JSON.stringify(userReview),
     }
   );
+  fetchReviews();
 });
