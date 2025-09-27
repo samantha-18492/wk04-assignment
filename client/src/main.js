@@ -44,7 +44,7 @@ form.addEventListener("submit", async (event) => {
 
   //post to database
   const response = await fetch(
-    "https://wk04-assignment-server.onrender.com//book-reviews",
+    "https://wk04-assignment-server.onrender.com/book-reviews",
     {
       method: "POST",
       headers: {
