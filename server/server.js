@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/book-reviews", async (req, res) => {
-  const result = await db.query("SELECT * FROM book_reviews");
+  const result = await db.query("SELECT * FROM book_reviews ORDER BY id DESC");
 
   res.json(result.rows);
 });
