@@ -10,6 +10,8 @@ async function fetchReviews() {
 }
 
 function createReviews(reviewsArray) {
+  reviewDisplay.innerHTML = ""; // clear reviews so duplicates don't display on re-load
+
   reviewsArray.forEach((review) => {
     const div = document.createElement("div");
 
