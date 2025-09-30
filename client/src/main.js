@@ -10,7 +10,11 @@ async function fetchReviews() {
 }
 
 function createReviews(reviewsArray) {
-  reviewDisplay.innerHTML = ""; // clear reviews so duplicates don't display on re-load
+  //clear reviews without getting rid of the h4 element in the div
+  const previousReviews = reviewDisplay.querySelectorAll(".review-container");
+  previousReviews.forEach((reviewElement) => reviewElement.remove());
+
+  // create elements based on database to display on page
 
   reviewsArray.forEach((review) => {
     const div = document.createElement("div");
